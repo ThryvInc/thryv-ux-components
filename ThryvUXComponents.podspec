@@ -27,7 +27,7 @@ There's a bunch of really cool stuff in this pod, all targeted at letting you bu
   s.source           = { :git => 'https://github.com/ThryvInc/thryv-ux-components.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/thryvinc'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'ThryvUXComponents/Classes/**/*'
   
@@ -51,4 +51,5 @@ There's a bunch of really cool stuff in this pod, all targeted at letting you bu
   s.dependency 'ISO8601DateFormatter'
   s.dependency 'SBTextInputView'
   s.dependency 'MultiModelTableViewDataSource'
+  s.dependency 'Prelude', '~> 3.0'
 end

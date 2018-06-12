@@ -7,9 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49184CFF20D0077B00D65C16 /* RRAppOpenFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CF020D0077A00D65C16 /* RRAppOpenFlowController.swift */; };
+		49184D0020D0077B00D65C16 /* RRServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CF120D0077A00D65C16 /* RRServerConfiguration.swift */; };
+		49184D0120D0077B00D65C16 /* RRAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CF220D0077A00D65C16 /* RRAuthResponse.swift */; };
+		49184D0220D0077B00D65C16 /* RoostRemote.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49184CF320D0077A00D65C16 /* RoostRemote.storyboard */; };
+		49184D0320D0077B00D65C16 /* GetDevicesCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CF420D0077A00D65C16 /* GetDevicesCall.swift */; };
+		49184D0420D0077B00D65C16 /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49184CF520D0077A00D65C16 /* DeviceTableViewCell.xib */; };
+		49184D0520D0077B00D65C16 /* GetPlacesCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CF620D0077A00D65C16 /* GetPlacesCall.swift */; };
+		49184D0620D0077B00D65C16 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CF720D0077A00D65C16 /* Place.swift */; };
+		49184D0720D0077B00D65C16 /* RRSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CF820D0077A00D65C16 /* RRSplashViewController.swift */; };
+		49184D0820D0077B00D65C16 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CF920D0077A00D65C16 /* DeviceTableViewCell.swift */; };
+		49184D0920D0077B00D65C16 /* RRDeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CFA20D0077A00D65C16 /* RRDeviceViewModel.swift */; };
+		49184D0A20D0077B00D65C16 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CFB20D0077A00D65C16 /* Device.swift */; };
+		49184D0B20D0077B00D65C16 /* DeviceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CFC20D0077A00D65C16 /* DeviceItem.swift */; };
+		49184D0C20D0077B00D65C16 /* RRMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CFD20D0077A00D65C16 /* RRMainViewController.swift */; };
+		49184D0D20D0077B00D65C16 /* RRLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184CFE20D0077A00D65C16 /* RRLoginViewController.swift */; };
+		49184D1B20D007B500D65C16 /* QERSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D0F20D007B400D65C16 /* QERSplashViewController.swift */; };
+		49184D1C20D007B500D65C16 /* SprintTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D1020D007B400D65C16 /* SprintTableViewCell.swift */; };
+		49184D1D20D007B500D65C16 /* SprintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D1120D007B400D65C16 /* SprintItem.swift */; };
+		49184D1E20D007B500D65C16 /* QERServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D1220D007B400D65C16 /* QERServerConfiguration.swift */; };
+		49184D1F20D007B500D65C16 /* SprintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D1320D007B400D65C16 /* SprintsViewController.swift */; };
+		49184D2020D007B500D65C16 /* SprintTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49184D1420D007B400D65C16 /* SprintTableViewCell.xib */; };
+		49184D2120D007B500D65C16 /* QERCredsLoginNetworkCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D1520D007B400D65C16 /* QERCredsLoginNetworkCall.swift */; };
+		49184D2220D007B500D65C16 /* QERAuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D1620D007B400D65C16 /* QERAuthResponse.swift */; };
+		49184D2320D007B500D65C16 /* QERLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D1720D007B400D65C16 /* QERLoginViewController.swift */; };
+		49184D2420D007B500D65C16 /* Sprint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D1820D007B400D65C16 /* Sprint.swift */; };
+		49184D2520D007B500D65C16 /* QERAppOpenFlowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D1920D007B400D65C16 /* QERAppOpenFlowController.swift */; };
+		49184D2620D007B500D65C16 /* GetSprintsCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49184D1A20D007B400D65C16 /* GetSprintsCall.swift */; };
 		5578696009380D77A0F9CD81 /* Pods_ThryvUXComponents_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101ACFF5F6024C117F98920C /* Pods_ThryvUXComponents_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
@@ -30,15 +56,41 @@
 /* Begin PBXFileReference section */
 		0E37E52CA82D1D24F6BAB0D7 /* Pods-ThryvUXComponents_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThryvUXComponents_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThryvUXComponents_Example/Pods-ThryvUXComponents_Example.release.xcconfig"; sourceTree = "<group>"; };
 		101ACFF5F6024C117F98920C /* Pods_ThryvUXComponents_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThryvUXComponents_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11AE12BF0082CA94DEF96F91 /* ThryvUXComponents.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ThryvUXComponents.podspec; path = ../ThryvUXComponents.podspec; sourceTree = "<group>"; };
+		11AE12BF0082CA94DEF96F91 /* ThryvUXComponents.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ThryvUXComponents.podspec; path = ../ThryvUXComponents.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		38A70A09793FB733221131C1 /* Pods-ThryvUXComponents_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThryvUXComponents_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThryvUXComponents_Tests/Pods-ThryvUXComponents_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4318FF7243FBB375836EA912 /* Pods_ThryvUXComponents_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThryvUXComponents_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		57E30B985B0950622B8EDB1F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5F4B7D93429B5D02C316562F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		49184CF020D0077A00D65C16 /* RRAppOpenFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRAppOpenFlowController.swift; sourceTree = "<group>"; };
+		49184CF120D0077A00D65C16 /* RRServerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRServerConfiguration.swift; sourceTree = "<group>"; };
+		49184CF220D0077A00D65C16 /* RRAuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRAuthResponse.swift; sourceTree = "<group>"; };
+		49184CF320D0077A00D65C16 /* RoostRemote.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RoostRemote.storyboard; sourceTree = "<group>"; };
+		49184CF420D0077A00D65C16 /* GetDevicesCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetDevicesCall.swift; sourceTree = "<group>"; };
+		49184CF520D0077A00D65C16 /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
+		49184CF620D0077A00D65C16 /* GetPlacesCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetPlacesCall.swift; sourceTree = "<group>"; };
+		49184CF720D0077A00D65C16 /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		49184CF820D0077A00D65C16 /* RRSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRSplashViewController.swift; sourceTree = "<group>"; };
+		49184CF920D0077A00D65C16 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		49184CFA20D0077A00D65C16 /* RRDeviceViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRDeviceViewModel.swift; sourceTree = "<group>"; };
+		49184CFB20D0077A00D65C16 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		49184CFC20D0077A00D65C16 /* DeviceItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceItem.swift; sourceTree = "<group>"; };
+		49184CFD20D0077A00D65C16 /* RRMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRMainViewController.swift; sourceTree = "<group>"; };
+		49184CFE20D0077A00D65C16 /* RRLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RRLoginViewController.swift; sourceTree = "<group>"; };
+		49184D0F20D007B400D65C16 /* QERSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QERSplashViewController.swift; sourceTree = "<group>"; };
+		49184D1020D007B400D65C16 /* SprintTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SprintTableViewCell.swift; sourceTree = "<group>"; };
+		49184D1120D007B400D65C16 /* SprintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SprintItem.swift; sourceTree = "<group>"; };
+		49184D1220D007B400D65C16 /* QERServerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QERServerConfiguration.swift; sourceTree = "<group>"; };
+		49184D1320D007B400D65C16 /* SprintsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SprintsViewController.swift; sourceTree = "<group>"; };
+		49184D1420D007B400D65C16 /* SprintTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SprintTableViewCell.xib; sourceTree = "<group>"; };
+		49184D1520D007B400D65C16 /* QERCredsLoginNetworkCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QERCredsLoginNetworkCall.swift; sourceTree = "<group>"; };
+		49184D1620D007B400D65C16 /* QERAuthResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QERAuthResponse.swift; sourceTree = "<group>"; };
+		49184D1720D007B400D65C16 /* QERLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QERLoginViewController.swift; sourceTree = "<group>"; };
+		49184D1820D007B400D65C16 /* Sprint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sprint.swift; sourceTree = "<group>"; };
+		49184D1920D007B400D65C16 /* QERAppOpenFlowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QERAppOpenFlowController.swift; sourceTree = "<group>"; };
+		49184D1A20D007B400D65C16 /* GetSprintsCall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSprintsCall.swift; sourceTree = "<group>"; };
+		57E30B985B0950622B8EDB1F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		5F4B7D93429B5D02C316562F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ThryvUXComponents_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThryvUXComponents_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -80,6 +132,121 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		49184CEF20D0077A00D65C16 /* Roost Remote */ = {
+			isa = PBXGroup;
+			children = (
+				49184CF320D0077A00D65C16 /* RoostRemote.storyboard */,
+				49184D2D20D0086C00D65C16 /* Models */,
+				49184D2C20D0084500D65C16 /* Network */,
+				49184D2A20D007E200D65C16 /* THUX */,
+				49184CF920D0077A00D65C16 /* DeviceTableViewCell.swift */,
+				49184CF520D0077A00D65C16 /* DeviceTableViewCell.xib */,
+			);
+			path = "Roost Remote";
+			sourceTree = "<group>";
+		};
+		49184D0E20D007B400D65C16 /* Queuer */ = {
+			isa = PBXGroup;
+			children = (
+				607FACD91AFB9204008FA782 /* Main.storyboard */,
+				49184D3020D0089C00D65C16 /* Models */,
+				49184D2F20D0089500D65C16 /* Network */,
+				49184D2E20D0088F00D65C16 /* THUX */,
+				49184D1020D007B400D65C16 /* SprintTableViewCell.swift */,
+				49184D1420D007B400D65C16 /* SprintTableViewCell.xib */,
+			);
+			path = Queuer;
+			sourceTree = "<group>";
+		};
+		49184D2A20D007E200D65C16 /* THUX */ = {
+			isa = PBXGroup;
+			children = (
+				49184D2B20D0082400D65C16 /* Controllers */,
+				49184CF020D0077A00D65C16 /* RRAppOpenFlowController.swift */,
+				49184CFA20D0077A00D65C16 /* RRDeviceViewModel.swift */,
+			);
+			path = THUX;
+			sourceTree = "<group>";
+		};
+		49184D2B20D0082400D65C16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49184CF820D0077A00D65C16 /* RRSplashViewController.swift */,
+				49184CFE20D0077A00D65C16 /* RRLoginViewController.swift */,
+				49184CFD20D0077A00D65C16 /* RRMainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49184D2C20D0084500D65C16 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				49184CF120D0077A00D65C16 /* RRServerConfiguration.swift */,
+				49184CF620D0077A00D65C16 /* GetPlacesCall.swift */,
+				49184CF420D0077A00D65C16 /* GetDevicesCall.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		49184D2D20D0086C00D65C16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49184CF220D0077A00D65C16 /* RRAuthResponse.swift */,
+				49184CF720D0077A00D65C16 /* Place.swift */,
+				49184CFB20D0077A00D65C16 /* Device.swift */,
+				49184CFC20D0077A00D65C16 /* DeviceItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49184D2E20D0088F00D65C16 /* THUX */ = {
+			isa = PBXGroup;
+			children = (
+				49184D1920D007B400D65C16 /* QERAppOpenFlowController.swift */,
+				49184D3120D008E000D65C16 /* Controllers */,
+			);
+			path = THUX;
+			sourceTree = "<group>";
+		};
+		49184D2F20D0089500D65C16 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				49184D1220D007B400D65C16 /* QERServerConfiguration.swift */,
+				49184D1520D007B400D65C16 /* QERCredsLoginNetworkCall.swift */,
+				49184D1A20D007B400D65C16 /* GetSprintsCall.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		49184D3020D0089C00D65C16 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49184D1620D007B400D65C16 /* QERAuthResponse.swift */,
+				49184D1820D007B400D65C16 /* Sprint.swift */,
+				49184D1120D007B400D65C16 /* SprintItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49184D3120D008E000D65C16 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49184D0F20D007B400D65C16 /* QERSplashViewController.swift */,
+				49184D1720D007B400D65C16 /* QERLoginViewController.swift */,
+				49184D1320D007B400D65C16 /* SprintsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49A2D95820CC61D20008469B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
 		5DBE4FF6A7A921DF87D32282 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -114,10 +281,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
-				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
+				49184D0E20D007B400D65C16 /* Queuer */,
+				49184CEF20D0077A00D65C16 /* Roost Remote */,
+				49A2D95820CC61D20008469B /* UI */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for ThryvUXComponents";
@@ -248,7 +414,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49184D0220D0077B00D65C16 /* RoostRemote.storyboard in Resources */,
+				49184D0420D0077B00D65C16 /* DeviceTableViewCell.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				49184D2020D007B500D65C16 /* SprintTableViewCell.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -270,13 +439,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThryvUXComponents_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6029D1BD2CD7D3A1849992FF /* [CP] Embed Pods Frameworks */ = {
@@ -285,9 +457,18 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ThryvUXComponents_Tests/Pods-ThryvUXComponents_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -315,9 +496,56 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ThryvUXComponents_Example/Pods-ThryvUXComponents_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/Cloudinary/Cloudinary.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FunkyNetwork/FunkyNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/ISO8601DateFormatter/ISO8601DateFormatter.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/MultiModelTableViewDataSource/MultiModelTableViewDataSource.framework",
+				"${BUILT_PRODUCTS_DIR}/OHHTTPStubs/OHHTTPStubs.framework",
+				"${BUILT_PRODUCTS_DIR}/Prelude/Prelude.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SBTextInputView/SBTextInputView.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SSPullToRefresh/SSPullToRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/ThryvUXComponents/ThryvUXComponents.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cloudinary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FunkyNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ISO8601DateFormatter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiModelTableViewDataSource.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OHHTTPStubs.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Prelude.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SBTextInputView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSPullToRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ThryvUXComponents.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -330,13 +558,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ThryvUXComponents_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EC41A7C2A3F6D8CC125AA6BD /* [CP] Copy Pods Resources */ = {
@@ -361,8 +592,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				49184D0A20D0077B00D65C16 /* Device.swift in Sources */,
+				49184D0920D0077B00D65C16 /* RRDeviceViewModel.swift in Sources */,
+				49184D1C20D007B500D65C16 /* SprintTableViewCell.swift in Sources */,
+				49184CFF20D0077B00D65C16 /* RRAppOpenFlowController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				49184D0520D0077B00D65C16 /* GetPlacesCall.swift in Sources */,
+				49184D0620D0077B00D65C16 /* Place.swift in Sources */,
+				49184D0720D0077B00D65C16 /* RRSplashViewController.swift in Sources */,
+				49184D0320D0077B00D65C16 /* GetDevicesCall.swift in Sources */,
+				49184D0B20D0077B00D65C16 /* DeviceItem.swift in Sources */,
+				49184D1D20D007B500D65C16 /* SprintItem.swift in Sources */,
+				49184D2120D007B500D65C16 /* QERCredsLoginNetworkCall.swift in Sources */,
+				49184D0120D0077B00D65C16 /* RRAuthResponse.swift in Sources */,
+				49184D0020D0077B00D65C16 /* RRServerConfiguration.swift in Sources */,
+				49184D2320D007B500D65C16 /* QERLoginViewController.swift in Sources */,
+				49184D2220D007B500D65C16 /* QERAuthResponse.swift in Sources */,
+				49184D0C20D0077B00D65C16 /* RRMainViewController.swift in Sources */,
+				49184D0D20D0077B00D65C16 /* RRLoginViewController.swift in Sources */,
+				49184D2420D007B500D65C16 /* Sprint.swift in Sources */,
+				49184D1F20D007B500D65C16 /* SprintsViewController.swift in Sources */,
+				49184D1B20D007B500D65C16 /* QERSplashViewController.swift in Sources */,
+				49184D2520D007B500D65C16 /* QERAppOpenFlowController.swift in Sources */,
+				49184D1E20D007B500D65C16 /* QERServerConfiguration.swift in Sources */,
+				49184D2620D007B500D65C16 /* GetSprintsCall.swift in Sources */,
+				49184D0820D0077B00D65C16 /* DeviceTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +703,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -495,7 +749,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -509,6 +763,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ThryvUXComponents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -524,6 +779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ThryvUXComponents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

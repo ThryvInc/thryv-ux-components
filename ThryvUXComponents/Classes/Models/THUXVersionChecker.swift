@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol THUXVersionChecker {
+public protocol THUXVersionChecker {
     func isCurrentVersion(appVersion: String, completion: (Bool) -> Void)
     func appVersionString() -> String
 }
