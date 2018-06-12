@@ -16,20 +16,21 @@ open class THUXAuthenticatedNetworkCall: JsonNetworkCall {
     }
     
     open static func authHeaders() -> [String : String] {
-        if let key = THUXSessionManager.session?.authHeaderKey(), let value = THUXSessionManager.session?.authHeaderValue() {
-            return [key: value]
+        if let keyVal = THUXSessionManager.session?.authHeaders() {
+            return keyVal
         }
         return [:]
     }
     
     open class func addAuthHeader(_ httpHeaders: [String: String]?) -> [String: String] {
+        let authHeader = authHeaders()
         if var headers = httpHeaders {
-            for key in authHeaders().keys {
-                headers[key] = authHeaders()[key]
+            for key in authHeader.keys {
+                headers[key] = authHeader[key]
             }
             return headers
         }
-        return authHeaders()
+        return authHeader
     }
 
 }

@@ -8,8 +8,7 @@
 import UIKit
 
 public protocol THUXSession {
-    func authHeaderKey() -> String
-    func authHeaderValue() -> String
+    func authHeaders() -> [String: String]
     
     func isAuthenticated() -> Bool
 }
@@ -31,8 +30,8 @@ open class THUXUserDefaultsSession: THUXSession {
         return authHeaderKeyString
     }
     
-    open func authHeaderValue() -> String {
-        return UserDefaults.standard.string(forKey: authDefaultsKey) ?? ""
+    open func authHeaders() -> [String: String] {
+        return [authHeaderKeyString: UserDefaults.standard.string(forKey: authDefaultsKey) ?? ""]
     }
     
     open func setAuthValue(authString: String) {

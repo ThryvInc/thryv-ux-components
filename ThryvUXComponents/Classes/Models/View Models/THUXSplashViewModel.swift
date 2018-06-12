@@ -10,7 +10,7 @@ import ReactiveSwift
 import Result
 
 public protocol THUXSplashTask {
-    func execute(completion: () -> Void)
+    func execute(completion: @escaping () -> Void)
 }
 
 public protocol THUXSplashInputs {
@@ -85,7 +85,9 @@ open class THUXSplashViewModel: THUXSplashInputs, THUXSplashOutputs, THUXSplashP
                 }
             }
             
-            self.isAuthedProperty.value = session?.isAuthenticated() ?? false
+            if let isAuthed = session?.isAuthenticated() {
+                self.isAuthedProperty.value = isAuthed
+            }
         }
         
         viewDidAppearProperty.signal.observeValues { _ in
