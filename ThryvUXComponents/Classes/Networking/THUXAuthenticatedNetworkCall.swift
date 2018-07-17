@@ -16,8 +16,10 @@ open class THUXAuthenticatedNetworkCall: JsonNetworkCall {
     }
     
     open static func authHeaders() -> [String : String] {
-        if let keyVal = THUXSessionManager.session?.authHeaders() {
+        if let keyVal = THUXSessionManager.session?.authHeaders?() {
             return keyVal
+        } else if let headerKey = THUXSessionManager.session?.authHeaderKey as? String, let headerValue = THUXSessionManager.session?.authHeaderValue as? String {
+            return [headerKey: headerValue]
         }
         return [:]
     }

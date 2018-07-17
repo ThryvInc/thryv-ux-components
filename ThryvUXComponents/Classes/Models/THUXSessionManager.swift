@@ -7,8 +7,10 @@
 
 import UIKit
 
-public protocol THUXSession {
-    func authHeaders() -> [String: String]
+@objc public protocol THUXSession {
+    @objc optional func authHeaders() -> [String: String]?
+    @objc optional var authHeaderKey: String? { get }
+    @objc optional var authHeaderValue: String? { get }
     
     func isAuthenticated() -> Bool
 }
@@ -19,19 +21,18 @@ open class THUXSessionManager: NSObject {
 
 open class THUXUserDefaultsSession: THUXSession {
     open let authDefaultsKey: String
-    open let authHeaderKeyString: String
+    open let authHeaderKey: String?
     
     public init(authDefaultsKey: String, authHeaderKey: String) {
         self.authDefaultsKey = authDefaultsKey
-        self.authHeaderKeyString = authHeaderKey
+        self.authHeaderKey = authHeaderKey
     }
     
-    open func authHeaderKey() -> String {
-        return authHeaderKeyString
-    }
-    
-    open func authHeaders() -> [String: String] {
-        return [authHeaderKeyString: UserDefaults.standard.string(forKey: authDefaultsKey) ?? ""]
+    open func authHeaders() -> [String: String]? {
+        if let headerKey = authHeaderKey {
+            return [headerKey: UserDefaults.standard.string(forKey: authDefaultsKey) ?? ""]
+        }
+        return nil
     }
     
     open func setAuthValue(authString: String) {
