@@ -10,21 +10,10 @@ import UIKit
 import ThryvUXComponents
 import FunkyNetwork
 
-class GetPlacesCall: THUXPagedNetworkCall {
-    lazy var placesSignal = dataSignal.skipNil().map(parseJsonPlaces).skipNil()
+class GetPlacesCall: THUXModelCall<[Place]> {
+    lazy var placesSignal = modelSignal
     
     init(stubHolder: StubHolderProtocol? = nil) {
         super.init(configuration: RRServerConfiguration.current, httpMethod: "GET", httpHeaders: [:], endpoint: "places", postData: nil, stubHolder: stubHolder)
-    }
-}
-
-func parseJsonPlaces(json: Data) -> [Place]? {
-    do {
-        let decoder = JSONDecoder()
-        let result = try decoder.decode([Place].self, from: json)
-        return result
-    } catch {
-        print("\(error)")
-        return nil
     }
 }
