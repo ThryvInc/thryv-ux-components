@@ -8,29 +8,43 @@
 import UIKit
 import ReactiveSwift
 import Result
+import FunkyNetwork
+
+public protocol Refreshable {
+    func refresh()
+}
 
 public protocol Pageable {
-    func refresh()
     func nextPage()
     func fetchPage(_ page: Int)
 }
 
-open class THUXRefreshableModelManager: Pageable {
-    open let pageProperty = MutableProperty<Int>(0)
-    open var call: THUXPagedNetworkCall?
+open class THUXRefreshableNetworkCallManager: Refreshable {
+    open var call: NetworkCall?
     
-    public init(_ call: THUXPagedNetworkCall) {
+    public init(_ call: NetworkCall) {
         self.call = call
     }
     
+    open func refresh() {
+        call?.fire()
+    }
+    
+}
+
+open class THUXPageableModelManager: THUXRefreshableNetworkCallManager, Pageable {
+    open let pageProperty = MutableProperty<Int>(0)
+    
     open func viewDidLoad() {
         pageProperty.signal.observeValues { page in
-            self.call?.page = page
+            if let call = self.call as? THUXPagedNetworkCall {
+                call.page = page
+            }
             self.call?.fire()
         }
     }
     
-    open func refresh() {
+    open override func refresh() {
         pageProperty.value = 0
     }
     

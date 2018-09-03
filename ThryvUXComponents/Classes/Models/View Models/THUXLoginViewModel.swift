@@ -22,7 +22,6 @@ public protocol THUXLoginOutputs {
     var submitButtonEnabled: Signal<Bool, NoError> { get }
     var activityIndicatorVisible: Signal<Bool, NoError> { get }
     var advanceAuthed: Signal<(), NoError> { get }
-    
 }
 
 public protocol THUXLoginProtocol {
@@ -53,11 +52,11 @@ open class THUXLoginViewModel: THUXLoginProtocol, THUXLoginInputs, THUXLoginOutp
     let fbTokenProperty = MutableProperty<String?>(nil)
     
     public let credentialLoginCall: THUXCredsLoginNetworkCall?
-    public let fbLoginCall: THUXFBLoginNetworkCall?
+    public let fbTokenLoginCall: THUXTokenLoginNetworkCall?
 
-    public init(credsCall: THUXCredsLoginNetworkCall? = nil, fbCall: THUXFBLoginNetworkCall? = nil) {
+    public init(credsCall: THUXCredsLoginNetworkCall? = nil, fbCall: THUXTokenLoginNetworkCall? = nil) {
         credentialLoginCall = credsCall
-        fbLoginCall = fbCall
+        fbTokenLoginCall = fbCall
         
         advanceAuthed = advanceAuthedProperty.signal
         
@@ -90,24 +89,14 @@ open class THUXLoginViewModel: THUXLoginProtocol, THUXLoginInputs, THUXLoginOutp
         }
         
         fbTokenProperty.signal.skipNil().observeValues { (token) in
-            self.fbLoginCall?.facebookToken = token
-            self.fbLoginCall?.fire()
+            self.fbTokenLoginCall?.token = token
+            self.fbTokenLoginCall?.fire()
             self.activityIndicatorVisibleProperty.value = true
         }
         
-        fbLoginCall?.httpResponseSignal.observeValues({ (response) in
-            if response.statusCode < 300 {
-                self.advanceAuthedProperty.value = ()
-            }
-            self.activityIndicatorVisibleProperty.value = false
-        })
+        fbTokenLoginCall?.httpResponseSignal.observeValues(authResponseReceived)
         
-        credentialLoginCall?.httpResponseSignal.observeValues({ (response) in
-            if response.statusCode < 300 {
-                self.advanceAuthedProperty.value = ()
-            }
-            self.activityIndicatorVisibleProperty.value = false
-        })
+        credentialLoginCall?.httpResponseSignal.observeValues(authResponseReceived)
     }
     
     open func usernameChanged(username: String?) {
@@ -128,6 +117,13 @@ open class THUXLoginViewModel: THUXLoginProtocol, THUXLoginInputs, THUXLoginOutp
     
     open func viewDidLoad() {
         self.viewDidLoadProperty.value = ()
+    }
+    
+    open func authResponseReceived(response: HTTPURLResponse) {
+        if response.statusCode < 300 {
+            self.advanceAuthedProperty.value = ()
+        }
+        self.activityIndicatorVisibleProperty.value = false
     }
     
     open static func isValidCreds(username: String?, password: String?) -> Bool {

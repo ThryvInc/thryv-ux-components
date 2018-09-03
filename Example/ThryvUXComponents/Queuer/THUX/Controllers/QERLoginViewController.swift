@@ -21,7 +21,8 @@ class QERLoginViewController: THUXLoginViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let navVC = segue.destination as? UINavigationController, let sprintsVC = navVC.topViewController as? SprintsViewController, segue.identifier == "main" {
+        if let navVC = segue.destination as? UINavigationController,
+            let sprintsVC = navVC.topViewController as? SprintsViewController, segue.identifier == "main" {
             flowController?.navigateToMain(viewController: sprintsVC)
         }
     }

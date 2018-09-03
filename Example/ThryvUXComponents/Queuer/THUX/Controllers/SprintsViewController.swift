@@ -10,7 +10,7 @@ import UIKit
 import ThryvUXComponents
 import MultiModelTableViewDataSource
 
-class SprintsViewController: THUXRefreshablePagedTableViewController {
+class SprintsViewController: THUXPageableTableViewController {
     var dataSource: MultiModelTableViewDataSource?
     
     override func viewDidLoad() {
@@ -18,5 +18,10 @@ class SprintsViewController: THUXRefreshablePagedTableViewController {
         
         dataSource?.tableView = self.tableView
         tableView.dataSource = dataSource
+        
+        pageableModelManager?.viewDidLoad()
+        pageableModelManager?.call?.errorSignal.observeValues({ (error) in
+            self.tableView.refreshControl?.endRefreshing()
+        })
     }
 }

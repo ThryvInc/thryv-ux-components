@@ -7,18 +7,18 @@
 
 import UIKit
 
-open class THUXRefreshableTableViewDelegate: NSObject, UITableViewDelegate {
-    open var refreshableModelManager: THUXRefreshableModelManager?
+open class THUXPageableTableViewDelegate: NSObject, UITableViewDelegate {
+    open var pageableModelManager: THUXPageableModelManager?
     open var pageSize: Int = 20
     open var pageTrigger: Int = 5
     
-    public init(_ refreshableModelManager: THUXRefreshableModelManager?) {
-        self.refreshableModelManager = refreshableModelManager
+    public init(_ pageableModelManager: THUXPageableModelManager?) {
+        self.pageableModelManager = pageableModelManager
     }
 
     open func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row % pageSize == pageSize - pageTrigger {
-            refreshableModelManager?.nextPage()
+        if tableView.numberOfRows(inSection: indexPath.section) - indexPath.row == pageSize - pageTrigger {
+            pageableModelManager?.nextPage()
         }
     }
 }

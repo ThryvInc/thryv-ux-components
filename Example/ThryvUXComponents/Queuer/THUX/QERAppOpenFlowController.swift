@@ -24,7 +24,15 @@ class QERAppOpenFlowController: THUXAppOpenFlowController {
     }
     
     func setupLogin() {
-        loginViewModel = THUXLoginViewModel(credsCall: QERCredsLoginNetworkCall())
+        let call = QERCredsLoginNetworkCall()
+        
+        call.authResponseSignal.observeValues { (authResponse) in
+            if let session = THUXSessionManager.session as? THUXUserDefaultsSession {
+                session.setAuthValue(authString: authResponse.apiKey)
+            }
+        }
+        
+        loginViewModel = THUXLoginViewModel(credsCall: call)
     }
     
     func navigateToLogin(viewController: QERLoginViewController) {
@@ -46,8 +54,8 @@ class QERAppOpenFlowController: THUXAppOpenFlowController {
             dataSource.tableView?.reloadData()
         }
         
-        viewController.refreshableModelManager = THUXRefreshableModelManager(call)
-        viewController.refreshableTableViewDelegate = THUXRefreshableTableViewDelegate(viewController.refreshableModelManager)
+        viewController.pageableModelManager = THUXPageableModelManager(call)
+        viewController.pageableTableViewDelegate = THUXPageableTableViewDelegate(viewController.pageableModelManager)
         viewController.dataSource = dataSource
     }
     

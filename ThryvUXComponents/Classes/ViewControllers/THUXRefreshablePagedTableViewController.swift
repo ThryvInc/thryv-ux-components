@@ -7,25 +7,21 @@
 
 import UIKit
 
-open class THUXRefreshablePagedTableViewController: UIViewController {
+open class THUXRefreshableTableViewController: UIViewController {
     @IBOutlet public var tableView: UITableView!
-    open var refreshableModelManager: THUXRefreshableModelManager? {
+    open var refreshableModelManager: THUXRefreshableNetworkCallManager? {
         didSet {
             refreshableModelManager?.call?.responseSignal.observeValues({ _ in
                 self.tableView.refreshControl?.endRefreshing()
             })
         }
     }
-    open var refreshableTableViewDelegate: THUXRefreshableTableViewDelegate?
     
     open override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.refreshControl = UIRefreshControl()
         tableView.refreshControl?.addTarget(self, action: #selector(refresh), for: .valueChanged)
-        tableView.delegate = refreshableTableViewDelegate
-        
-        refreshableModelManager?.viewDidLoad()
     }
     
     open override func viewWillAppear(_ animated: Bool) {
@@ -41,4 +37,19 @@ open class THUXRefreshablePagedTableViewController: UIViewController {
         refreshableModelManager?.refresh()
     }
 
+}
+
+open class THUXPageableTableViewController: THUXRefreshableTableViewController {
+    open var pageableModelManager: THUXPageableModelManager? {
+        didSet {
+            self.refreshableModelManager = pageableModelManager
+        }
+    }
+    open var pageableTableViewDelegate: THUXPageableTableViewDelegate?
+    
+    open override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.delegate = pageableTableViewDelegate
+    }
+    
 }

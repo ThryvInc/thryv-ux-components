@@ -9,17 +9,17 @@
 import UIKit
 import ThryvUXComponents
 
-class RRMainViewController: THUXRefreshablePagedTableViewController {
+class RRMainViewController: THUXPageableTableViewController {
     var viewModel: RRDeviceViewModel? {
         didSet {
             if let viewModel = viewModel {
-                refreshableModelManager = THUXRefreshableModelManager(viewModel.call)
-                refreshableTableViewDelegate = THUXRefreshableTableViewDelegate(refreshableModelManager)
+                pageableModelManager = THUXPageableModelManager(viewModel.call)
+                pageableTableViewDelegate = THUXPageableTableViewDelegate(pageableModelManager)
                 
                 viewModel.dataSource.tableView = self.tableView
                 tableView.dataSource = viewModel.dataSource
                 
-                refreshableModelManager?.viewDidLoad()
+                pageableModelManager?.viewDidLoad()
                 refreshableModelManager?.refresh()
             }
         }

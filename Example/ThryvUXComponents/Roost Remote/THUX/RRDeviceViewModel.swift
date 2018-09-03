@@ -14,7 +14,7 @@ import Result
 import ReactiveSwift
 
 class RRDeviceViewModel: THUXModelListViewModel<Device> {
-    let call: THUXPagedNetworkCall
+    let call: THUXModelCall<[Device]>
     
     init(placeId: String) {
         let devicesCall = GetDevicesCall(placeId: placeId)
