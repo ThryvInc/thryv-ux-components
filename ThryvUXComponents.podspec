@@ -46,7 +46,7 @@ There's a bunch of really cool stuff in this pod, all targeted at letting you bu
   s.dependency 'Cloudinary'
   #s.dependency 'Bolts'
   #s.dependency 'FBSDKCoreKit'
-  #s.dependency 'FBSDKLoginKit'
+  s.dependency 'FBSDKLoginKit'
   s.dependency 'SSPullToRefresh'
   s.dependency 'ISO8601DateFormatter'
   #s.dependency 'SBTextInputView'
