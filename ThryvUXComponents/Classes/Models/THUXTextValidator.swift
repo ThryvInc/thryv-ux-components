@@ -29,7 +29,7 @@ open class THUXLowercaseTextValidator: THUXTextValidatorProtocol {
 }
 
 open class THUXLengthTextValidator: THUXTextValidatorProtocol {
-    open let length: Int
+    public let length: Int
     public var invalidText: String {
         get {
             return "Must be at least \(self.length) characters long"

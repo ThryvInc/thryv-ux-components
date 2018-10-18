@@ -15,8 +15,8 @@ import ReactiveSwift
 class GetSprintsCall: THUXPagedNetworkCall {
     public lazy var sprintsSignal: Signal<[Sprint], NoError> = self.dataSignal.skipNil().map(GetSprintsCall.parse).skipNil()
     
-    init(stubHolder: StubHolderProtocol? = nil) {
-        super.init(configuration: QERServerConfiguration.current, httpMethod: "GET", httpHeaders: [:], endpoint: "sprints", postData: nil, stubHolder: stubHolder)
+    init(networkErrorHandler: NetworkErrorHandler? = DefaultNetworkErrorHandler(), stubHolder: StubHolderProtocol? = nil) {
+        super.init(configuration: QERServerConfiguration.current, httpMethod: "GET", httpHeaders: [:], endpoint: "sprints", postData: nil, networkErrorHandler: networkErrorHandler, stubHolder: stubHolder)
     }
     
     static func parse(json: Data) -> [Sprint]? {

@@ -1,34 +1,24 @@
 PODS:
-  - Alamofire (4.6.0)
+  - Alamofire (4.7.3)
   - Bolts (1.9.0):
     - Bolts/AppLinks (= 1.9.0)
     - Bolts/Tasks (= 1.9.0)
   - Bolts/AppLinks (1.9.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.9.0)
-  - Cloudinary (2.3.0):
-    - Alamofire (~> 4.6.0)
-  - FBSDKCoreKit (4.32.0):
+  - Cloudinary (2.4.0):
+    - Alamofire (~> 4.7.2)
+  - FBSDKCoreKit (4.37.0):
     - Bolts (~> 1.7)
-  - FBSDKLoginKit (4.32.0):
+  - FBSDKLoginKit (4.37.0):
     - FBSDKCoreKit
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
-  - FunkyNetwork (0.1.5):
+  - FunkyNetwork (0.1.10):
     - OHHTTPStubs/Swift
     - Prelude (~> 3.0)
     - ReactiveSwift
   - ISO8601DateFormatter (0.8)
-  - MultiModelTableViewDataSource (0.0.2)
-  - Nimble (7.0.3)
-  - Nimble-Snapshots (6.3.0):
-    - Nimble-Snapshots/Core (= 6.3.0)
-  - Nimble-Snapshots/Core (6.3.0):
-    - FBSnapshotTestCase (~> 2.0)
-    - Nimble (~> 7.0)
+  - MultiModelTableViewDataSource (0.0.3)
+  - Nimble (7.3.1)
   - OHHTTPStubs/Core (6.1.0)
   - OHHTTPStubs/Default (6.1.0):
     - OHHTTPStubs/Core
@@ -43,10 +33,10 @@ PODS:
   - OHHTTPStubs/Swift (6.1.0):
     - OHHTTPStubs/Default
   - Prelude (3.0.0)
-  - Quick (1.2.0)
-  - ReactiveSwift (3.1.0):
-    - Result (~> 3.2)
-  - Result (3.2.4)
+  - Quick (1.3.2)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.0.0)
   - SSPullToRefresh (1.3.0)
   - ThryvUXComponents (0.0.1):
     - Cloudinary
@@ -58,10 +48,8 @@ PODS:
     - SSPullToRefresh
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
-  - Nimble (~> 7.0.2)
-  - Nimble-Snapshots (~> 6.3.0)
-  - Quick (~> 1.2.0)
+  - Nimble (~> 7.3.0)
+  - Quick (~> 1.3.0)
   - ThryvUXComponents (from `../`)
 
 EXTERNAL SOURCES:
@@ -69,25 +57,23 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
-  Cloudinary: fd611d907bd6608f3556c40673b628e466809816
-  FBSDKCoreKit: 55d7f2ac45d9c4b9b6119f4e43900fe84b9b7b1b
-  FBSDKLoginKit: 32ac05c2a59952c363c2e85aafa8f73ba93bcbad
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  FunkyNetwork: 64a440e313433d1d5e1fd0b248d0ca3b022decf3
+  Cloudinary: d87b545d6a5d00c4022bec964839fdaf359d7c53
+  FBSDKCoreKit: fe5f3474499a81963e11e3f3a5c753d0a95ca2b4
+  FBSDKLoginKit: 2f7249686d1e30ce8a5ef5400eedf50b3e3df332
+  FunkyNetwork: 4473963af524d2fe1bbdb7578df160fb2dbdefe9
   ISO8601DateFormatter: 4551b6ce4f83185425f583b0b3feb3c7b59b942c
-  MultiModelTableViewDataSource: 50d220ea38f713426ca1087d44ced0ea6cdf1a20
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Nimble-Snapshots: f5459b5b091678dc942d03ec4741cacb58ba4a52
+  MultiModelTableViewDataSource: cab335fcc0ea4ee6513429908d65677545c5e407
+  Nimble: 04f732da099ea4d153122aec8c2a88fd0c7219ae
   OHHTTPStubs: 1e21c7d2c084b8153fc53d48400d8919d2d432d0
   Prelude: fe4cc0fd961d34edf48fe6b04d05c863449efb0a
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
-  ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  Quick: 2623cb30d7a7f41ca62f684f679586558f483d46
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
   SSPullToRefresh: 3a47e116692b60e7da5a8c60418488133bcc9550
   ThryvUXComponents: e7ff786469f648b65a4ade757dbc51fb46ad73bc
 
-PODFILE CHECKSUM: a46c828de93011b13aa397b587ce5465c605ab2e
+PODFILE CHECKSUM: 2d6e59227403ffc5d2020ae5731bb2319442e238
 
 COCOAPODS: 1.4.0

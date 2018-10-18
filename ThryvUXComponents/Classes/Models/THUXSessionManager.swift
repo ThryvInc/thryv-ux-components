@@ -20,8 +20,8 @@ open class THUXSessionManager: NSObject {
 }
 
 open class THUXUserDefaultsSession: THUXSession {
-    open let authDefaultsKey: String
-    open let authHeaderKey: String?
+    public let authDefaultsKey: String
+    public let authHeaderKey: String?
     
     public init(authDefaultsKey: String, authHeaderKey: String) {
         self.authDefaultsKey = authDefaultsKey

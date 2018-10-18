@@ -126,15 +126,15 @@ open class THUXLoginViewModel: THUXLoginProtocol, THUXLoginInputs, THUXLoginOutp
         self.activityIndicatorVisibleProperty.value = false
     }
     
-    open static func isValidCreds(username: String?, password: String?) -> Bool {
+    public static func isValidCreds(username: String?, password: String?) -> Bool {
         return true
     }
     
-    open static func isInvalidCreds(username: String?, password: String?) -> Bool {
+    public static func isInvalidCreds(username: String?, password: String?) -> Bool {
         return false
     }
     
-    open static func isCredsPresent(username: String?, password: String?) -> Bool {
+    public static func isCredsPresent(username: String?, password: String?) -> Bool {
         return username != nil && !(username!.isEmpty) && password != nil && !(password!.isEmpty)
     }
 }
